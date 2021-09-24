@@ -1,0 +1,245 @@
+/*CSS - Variables*/
+:root {
+  --color-red: hsl(0, 78%, 62%);
+  --color-green: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+
+  --color-text-one: hsl(234, 12%, 34%);
+  --color-text-two: hsl(229, 6%, 66%);
+  --color-text-three: hsl(0, 0%, 98%);
+}
+/*CSS - Normalize*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*CSS - Reusable code*/
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*CSS - root*/
+html {
+  font-size: 62.5%;
+}
+/*CSS - Container page*/
+body {
+  background-color: var(--color-text-three);
+  font-family: "Poppins", sans-serif;
+}
+/**/
+.main-page {
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+
+  padding: 0 2rem;
+}
+/**/
+.four-card-feature {
+  width: 100%;
+  max-width: 110rem;
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+/**/
+.four-card-feature__box-text {
+  text-align: center;
+  color: var(--color-text-one);
+
+  margin-bottom: 5rem;
+}
+.four-card-feature__title {
+  margin-bottom: 2rem;
+}
+.four-card-feature__title-normal {
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 200;
+}
+.four-card-feature__title-bold {
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.four-card-feature__text {
+  color: var(--color-text-two);
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  max-width: 51rem;
+  margin: auto;
+}
+/**/
+.four-card-feature__box-card {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+/**/
+.four-card-feature__section-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.four-card-feature__section-card--margin {
+  margin: 0 2.4rem;
+}
+/**/
+.card {
+  background-color: #ffffff;
+
+  max-width: 30rem;
+  padding: 2.6rem 3rem;
+  border-radius: 0.6rem;
+
+  box-shadow: 0 1.2rem 3rem -12px var(--color-text-two);
+}
+.card--red {
+  border-top: 0.4rem solid var(--color-red);
+}
+.card--green {
+  border-top: 0.4rem solid var(--color-green);
+}
+.card--blue {
+  border-top: 0.4rem solid var(--color-blue);
+}
+.card--orange {
+  border-top: 0.4rem solid var(--color-orange);
+}
+.car--margin {
+  margin-bottom: 3rem;
+}
+.card__tittle {
+  color: var(--color-text-one);
+  font-size: 1.8rem;
+  font-size: 600;
+
+  margin-bottom: 1rem;
+}
+.card__text {
+  color: var(--color-text-two);
+  font-size: 1.1rem;
+  font-weight: 500;
+
+  padding-right: 2rem;
+  margin-bottom: 3rem;
+}
+.card__img {
+  float: right;
+  transform: scale(0.8);
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 54%;
+  }
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 820px) {
+  html {
+    font-size: 46%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 72%;
+  }
+  /**/
+  .main-page {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+
+    padding: 8rem 0;
+  }
+  /**/
+  .four-card-feature {
+    padding: 0 3rem;
+  }
+  /**/
+  .four-card-feature__box-text {
+    margin-bottom: 8rem;
+  }
+  .four-card-feature__title-normal {
+    font-size: 2.4rem;
+  }
+  .four-card-feature__title-bold {
+    font-size: 2.4rem;
+  }
+  .four-card-feature__text {
+    max-width: 35rem;
+  }
+  /**/
+  .four-card-feature__box-card {
+    flex-direction: column;
+  }
+  .four-card-feature__section-card--margin {
+    margin: 0;
+  }
+
+  .four-card-feature__text {
+    padding: 0;
+    width: 100%;
+
+    font-size: 1.5rem;
+  }
+  /**/
+  .card {
+    max-width: 35rem;
+    width: 100%;
+    padding: 2.6rem 0;
+  }
+  .card__tittle {
+    padding: 0 2.4rem;
+
+    font-size: 2.2rem;
+  }
+  .card__text {
+    padding: 0 2.4rem;
+    margin-bottom: 2rem;
+
+    font-size: 1.3rem;
+  }
+  .card__img {
+    padding-right: 2.6rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 66%;
+  }
+}
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 54%;
+  }
+}
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 48%;
+  }
+}
