@@ -100,7 +100,7 @@ body {
   background-color: #ffffff;
 
   max-width: 30rem;
-  padding: 2.6rem 3rem;
+  padding: 2.6rem;
   border-radius: 0.6rem;
 
   box-shadow: 0 1.2rem 3rem -12px var(--color-text-two);
@@ -118,7 +118,7 @@ body {
   border-top: 0.4rem solid var(--color-orange);
 }
 .car--margin {
-  margin-bottom: 3rem;
+  margin-bottom: 2.4rem;
 }
 .card__tittle {
   color: var(--color-text-one);
@@ -138,6 +138,11 @@ body {
 .card__img {
   float: right;
   transform: scale(0.8);
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 54%;
+  }
 }
 @media screen and (max-width: 1024px) {
   html {
@@ -223,7 +228,12 @@ body {
     font-size: 90%;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 72%;
+  }
+}
+@media screen and (max-width: 376px) {
   html {
     font-size: 66%;
   }
